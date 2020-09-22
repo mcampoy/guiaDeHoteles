@@ -1,0 +1,249 @@
+$colorFuente: #045AA5;
+$blancoFuente: #ffff;
+$colorTexto: #2b2b2b;
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+*,
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    font-size: 1.1em;
+    color:$colorTexto;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $colorFuente;
+}
+
+/* HEADER */
+
+.jumbotron {
+    background-color: $colorFuente;
+    color: $blancoFuente;
+    @include margenes(50px, 3px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.jumboPrecio {
+    margin-top: 2%;
+}
+
+@media (max-width: 767px){
+    .jumbotron {
+    height: 150px;
+    text-align: center;
+    }
+} 
+.banner {
+    height: 346px;
+    background-image: url('/public/assets/img/playa.png');
+    background-size: cover;
+    margin-bottom: 35px;
+    background-position: center;
+}
+
+.lead {
+    color:$colorTexto;
+    padding: .6%;
+    text-align: center;
+    background:$blancoFuente;
+    font-size: 1em;
+    border-radius: 20px 20px;
+}
+
+.breadcrumb {
+    margin-top: 35px;
+}
+
+/* FAQS */
+
+.faqs {
+    padding: 0 3%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.faq {
+    padding: 2%;
+    text-align: center;
+}
+
+/* CARDS */
+.card-hotel {
+    flex: 1 200px;
+    margin-top: 10px;
+}
+
+.btn-p {
+    background-color:$colorFuente; 
+    border: 1px solid $colorFuente;
+    border-radius: 0px;
+    color: $blancoFuente;
+    font-weight: 500;
+    align-self: center;
+    width: 100%;
+}
+
+.btn:hover {
+    color: $blancoFuente;
+}
+
+.btn {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btnInfo, .btnAccord, #btnContact {
+    background:$blancoFuente;
+    border: 1px solid$colorFuente;
+    color: $colorFuente;
+}
+
+#btnContact {
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.btnInfo:hover, .btnAccord:focus, .btnAccord:hover {
+    background-color:$colorFuente;
+    color:$blancoFuente;
+}
+
+.infoTarj {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.btn-submit {
+    background-color:$colorFuente; 
+    border: 0px;
+    border-radius: 4px;
+    color:$blancoFuente;
+    font-weight: 500;
+    align-self: center;
+    padding: 1%;
+    margin-bottom: 4%;
+}
+
+.card-body {
+    padding: 1.25rem 1em;
+}
+
+.badge {
+    margin-bottom: 2%;
+}
+
+.badge-warning {
+    color: $blancoFuente;
+}
+/* FOOTER */
+footer {
+    background: #F8F9FA;
+    border-top: 1px solid #cec9c9;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.rights {
+    padding-top: 2%;
+    border-top: 1px solid #cec9c9;
+    text-align: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto,
+.social,
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 1%;
+    padding: 2% 0;
+}
+
+address p {
+    margin-bottom: 2px;
+}
+
+
+/* PÁGINA ABOUT */
+
+.about-span {
+    margin: 5% 0;
+}
+
+.about-content {
+    text-align: justify;
+    padding-bottom: 3%;
+}
+
+
+/* PÁGINA PRECIOS */
+
+td:not(:first-child), th {
+    text-align: center;
+}
+
+
+.oi-star {
+    color: #045AA5;
+}
+
+.acor {
+    display: block;
+    margin: auto;
+}
+
+/* ÍCONOS */
+
+.oi {
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+/* TABLE VALIDACIONES */
+
+.tab-content {
+    padding-top: 10px;
+}
+
+.opin td {
+    text-align: left;
+}
+
+.fa-info-circle {
+    color: #17A2B8;
+    font-size: 1.8em;
+}
+
+.val-op {
+    min-width: 180px;
+}
+
+.val-nom {
+    min-width: 200px;   
+}
+
+.opc-cal {
+    min-width: 180px;
+}
+
+.tooltip-title {
+    background:$blancoFuente;
+}
